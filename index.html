@@ -11,15 +11,21 @@ body {
     background-attachment: fixed;  
     background-size: cover;
 }
+
+.paragraph {
+    background-color:darkolivegreen;
+    color: white;
+    padding: 10px;
+}
 </style>
 </head>
 
 
-<body">
+<body>
 
 <h1 style="font-family:copperplate;text-align:center;font-size:300%" title ="Chubby is awesome">Welcome to Chubby's World!</h1>
 
-<p>
+<p class="paragraph"> 
     This is website dedicted to all things Chubby Chooby.<br>Come back for regular updates!
     <br>
     Anytime that you see this <span title="Chubby is super awesome!">&#129409;</span>, it means that you can hover over it to get a special message from me!
@@ -30,9 +36,20 @@ body {
     <br>
 ></p>
 
+<p>
+<button onclick="openGoogle()">Take me to Google</button>
+
+<script>
+    function openGoogle(){
+        window.open("https://www.google.com","_blank");
+    }
+</script>
+<noscript>Your browser does not support JavaScript!</noscript>
+</p>
 
 
 <a href="page1.html">Go to HTML Playground<br></a>
+
 
 
 </body>
