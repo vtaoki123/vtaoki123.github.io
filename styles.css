@@ -12,8 +12,14 @@ header {
   font-size: 3vw;
 }
 p {
-  color: red;
+  color:blue;
+  background-color:transparent;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size:150%
-
+}
+footer {
+  background-color:transparent;
+  padding: 10px;
+  text-align: center;
+  color:blue;
 }
