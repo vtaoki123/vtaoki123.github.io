@@ -1,5 +1,8 @@
 body {
-  background-color: rgb(206, 203, 34);
+  background-image: url('chubbybackground.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;  
+  /*background-size: cover;*/
 }
 h1 {
   color: blue;

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US"> <!Declares the language of the website to help search engines> 
 
 <head>
+    <meta charset="UTF-8"> <!Declares character encoding>
+    <title>Chubby Chooby's World</title> <!Title for toolbar and for search engine results>
+
 
 <link rel="stylesheet" href="styles.css">   <!This links the sheet to an external CSS style sheet>
 
@@ -12,7 +15,7 @@
 <style>
 /* This is the convention for comments in CSS*/
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;   /* This is necessary to create the layout boxes side by side */
 }
 
 header {   /* This defines the parameters of the header portion of the webpage*/
@@ -29,24 +32,18 @@ nav {   /* This defines the parameters of the navigation bar of the webpage*/
     padding: 20px;
 }
 
-article {
+article { /* This defines the larger box in the main section */
     float: left;
     padding: 20px;
     width: 70%;
-    background-color:floralwhite
 }
 
-body {
-    background-image: url('chubbybackground.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-}
-.paragraph {
+paragraph {
     background-color:darkolivegreen;
     color: white;
     padding: 10px;
 }
+
 table {
     font-family: georgia;
     border-collapse: collapse;
@@ -103,6 +100,7 @@ tr:nth-child(even) {
         window.open("https://www.google.com","_blank");
     }
 </script>
+
 <noscript>Your browser does not support JavaScript!</noscript>
 </p>
 
