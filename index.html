@@ -11,13 +11,29 @@
 
 <style>
 /* This is the convention for comments in CSS*/
+* {
+  box-sizing: border-box;
+}
 
-header {   /* This defines the parameter of the header portion of the webpage*/
+header {   /* This defines the parameters of the header portion of the webpage*/
   padding: 20px;
   text-align: center;
   font-family: copperplate;
   font-size: 30px;
   color: white;
+}
+
+nav {   /* This defines the parameters of the navigation bar of the webpage*/
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color:floralwhite
 }
 
 body {
@@ -54,18 +70,30 @@ tr:nth-child(even) {
     <h1>Welcome to Chubby's World!!</h1>
 </header>
 
+<section>
+    <nav>
+      <ul>
+        <li><a href="#">Chubby</a></li>
+        <li><a href="#">Tiptoes</a></li>
+        <li><a href="#">Piggy</a></li>
+      </ul>
+    </nav>
+
+    <article>
+        <p> 
+            This is website dedicted to all things Chubby Chooby.<br>Come back for regular updates!
+            <br>
+            <br>
+            Anytime that you see this <span title="Chubby is super awesome!">&#129409;</span>, it means that you can hover over it to get a special message from me!
+            <br>
+            <br>
+            You can also find out what my best friends have to say too! Meet Tiptoes <span title="Milk is good for you!">&#128046;</span> and Piggy <span title="I wrote Les Miserables!">&#128055;</span>.
+            <br>
+        </p>
+    </article>
+</section>
 
 
-<p class="paragraph"> 
-    This is website dedicted to all things Chubby Chooby.<br>Come back for regular updates!
-    <br>
-    <br>
-    Anytime that you see this <span title="Chubby is super awesome!">&#129409;</span>, it means that you can hover over it to get a special message from me!
-    <br>
-    <br>
-    You can also find out what my best friends have to say too! Meet Tiptoes <span title="Milk is good for you!">&#128046;</span> and Piggy <span title="I wrote Les Miserables!">&#128055;</span>.
-    <br>
-</p>
 
 <p>
 <button onclick="openGoogle()">Take me to Google</button>
@@ -90,31 +118,31 @@ tr:nth-child(even) {
     <tr>
         <td>Chubby</td>
         <td>Chooby</td>
-        <td>diva <span title="Chubby takes the best selfies!!">&#129409;</span></td>
+        <td>digital content self-promoter <span title="Chubby takes the best selfies!!">&#129409;</span></td>
         <td>selfies, self-promotion</td>
     </tr>
     <tr>
         <td>Piggy</td>
         <td>n/a</td>
-        <td>world's greatest inventor</td>
+        <td>copy editor</td>
         <td>copying other people's work</td>
     </tr>
     <tr>
         <td>Tiptoes</td>
         <td>n/a</td>
-        <td>milk producer</td>
-        <td>dairy product development</td>
+        <td>dairy engineer</td>
+        <td>dairy products development</td>
     </tr>
     <tr>
         <td>Smilina</td>
         <td>Gingi</td>
         <td>head of dairy procurement</td>
-        <td>all things related to dairy sciences</td>
+        <td>all things related to dairy products</td>
     </tr>
     <tr>
         <td>Mommy</td>
         <td>n/a</td>
-        <td>chit chat woman</td>
+        <td>communications specialist</td>
         <td>chit chat, lipstick art, depantsing</td>
     </tr>
 </table>
