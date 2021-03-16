@@ -2,24 +2,49 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+* {
+    box-sizing:border-box;
+}
  
+.left {
+    padding:20px;
+    width:30%;
+    float: left;
+}
 
+.main {
+    padding:20px;
+    width:70%;
+    float: left;
+}
+
+@media screen and (max-width:800px) {
+  .left, .main {
+    width:100%;
+  }
+}
 </style>
 
 </head>
+
+<header>
+  <h1>Chubby's World</h1>
+</header>
+
 <body>
 
 
-<header>
-  <h1>Chubby's World!!</h1>
-</header>
 
-<div>
+
+<div class="left">
+  <p>
   <a href="index.html">Return to Homepage<br></a>
+  </p>
 </div>
 
-
+<div class="main">
 <p>SVG circles and ellipses</p>
 <svg width="200" height="200">
   <circle cx="100" cy="100" r="80" stroke="green" stroke-width="4" fill="green" />
@@ -113,6 +138,8 @@ function drawHand(ctx, pos, length, width) {
     ctx.rotate(-pos);
 }
 </script>
+
+</div>
 
 </body>
 </html>

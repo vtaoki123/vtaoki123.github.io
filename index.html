@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-US"> <!Declares the language of the website to help search engines> 
+<html lang="en-US"> <!Declares language of website for search engines> 
 
 <head>
     <meta charset="UTF-8"> <!Declares character encoding>
-    <title>Chubby Chooby's World</title> <!Title for toolbar and for search engine results>
+    <title>Chubby Chooby's World</title> <!Title for toolbar and for search engines>
 
 
-<link rel="stylesheet" href="styles.css">   <!This links the sheet to an external CSS style sheet>
+<link rel="stylesheet" href="styles.css">   <!Links sheet to external CSS style sheet>
 
-<meta name="viewport" content="width=device-width, initial-scale=1"> <!This scales it to different screen sizes like cell phones and iPads>
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!Scales to different screen sizes: cell phones and iPads>
 
 <!YOU CANNOT USE HTML COMMENT CONVENTIONS WITHIN CSS SCRIPT>
 
 <style>
-/* This is the convention for comments in CSS*/
+
+/* Convention CSS comments*/
 * {
-  box-sizing: border-box;   /* This is necessary to create the layout boxes side by side */
+  box-sizing: border-box;   /* Necessary to create layout boxes side by side */
 }
 
 
@@ -31,13 +32,32 @@
   display: table;
 }
 
-nav {   /* This defines the parameters of the navigation bar of the webpage*/
+
+.left {
+    padding:20px;
+    width:30%;
+    float: left;
+}
+
+.main {
+    padding:20px;
+    width:70%;
+    float: left;
+}
+
+@media screen and (max-width:800px) {
+  .left, .main {
+    width:100%;
+  }
+}
+
+nav {   /* Defines  parameters of navigation bar*/
     float: left;
     width: 30%;
     padding: 20px;
 }
 
-article { /* This defines the larger box in the main section */
+article { /* Defines larger box in the main section */
     float: left;
     padding: 20px;
     width: 70%;
@@ -57,6 +77,7 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 </style>
+
 
 </head>
 
@@ -143,6 +164,70 @@ tr:nth-child(even) {
     </article>
 </section>
 
+
+
+<div class="left">
+    <ul>
+        <li><a href="#">Chubby</a></li>
+        <li><a href="#">Tiptoes</a></li>
+        <li><a href="#">Piggy</a></li>
+    </ul>
+</div>
+
+<div class="main">
+    <p> 
+        This is website dedicted to all things Chubby Chooby.<br>Come back for regular updates!
+        <br>
+        <br>
+        Anytime that you see this <span title="Chubby is super awesome!">&#129409;</span>, it means that you can hover over it to get a special message from me!
+        <br>
+        <br>
+        You can also find out what my best friends have to say too! Meet Tiptoes <span title="Milk is good for you!">&#128046;</span> and Piggy <span title="I wrote Les Miserables!">&#128055;</span>.
+        <br>
+        <br>
+        <button onclick="openGoogle()">Take me to Google</button>
+    </p>
+    <p>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Occupation</th>
+                <th>Specialization</th>
+            </tr>
+            <tr>
+                <td>Chubby</td>
+                <td>Chooby</td>
+                <td>digital content self-promoter <span title="Chubby takes the best selfies!!">&#129409;</span></td>
+                <td>selfies, self-promotion</td>
+            </tr>
+            <tr>
+                <td>Piggy</td>
+                <td>n/a</td>
+                <td>copy editor</td>
+                <td>copying other people's work</td>
+            </tr>
+            <tr>
+                <td>Tiptoes</td>
+                <td>n/a</td>
+                <td>dairy engineer</td>
+                <td>dairy products development</td>
+            </tr>
+            <tr>
+                <td>Smilina</td>
+                <td>Gingi</td>
+                <td>head of dairy procurement</td>
+                <td>all things related to dairy products</td>
+            </tr>
+            <tr>
+                <td>Mommy</td>
+                <td>n/a</td>
+                <td>communications specialist</td>
+                <td>chit chat, lipstick art, depantsing</td>
+            </tr>
+        </table>
+    </p>
+</div>
 
 <footer>
     <p>
