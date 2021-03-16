@@ -2,7 +2,7 @@ body {
   background-image: url('chubbybackground.jpg');
   background-repeat: repeat;
   background-attachment: fixed;  
-  background-size: 1%;
+  background-size: 5%;
 }
 header {
   color: blue;
