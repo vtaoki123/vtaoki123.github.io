@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
-.left {
-  background-color:#2196F3;
-  padding:20px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
 }
 
-.main {
-  background-color:#f1f1f1;
-  padding:20px;
-  float:left;
-  width:60%; /* The width is 60%, by default */
-}
-
-.right {
-  background-color:#4CAF50;
-  padding:20px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width:800px) {
-  .left, .main, .right {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
 </head>
 <body>
 
-<h2>Media Queries</h2>
-<p>Resize the browser window.</p>
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
 
-<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
-
-<div class="left">
-  <p>Left Menu</p>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="3musketeers04.jpg">
+      <img src="3musketeers04.jpg" alt="3musketeers04" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 </div>
 
-<div class="main">
-  <p>Main Content</p>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="3musketeers05.jpg">
+      <img src="3musketeers05.jpg" alt="3musketeers05" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 </div>
 
-<div class="right">
-  <p>Right Content</p>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="3musketeers01.jpg">
+      <img src="3musketeers01.jpg" alt="3musketeers01" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="3musketeers02.jpg">
+      <img src="3musketeers02.jpg" alt="3musketeers02" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>Yatta</p>
 </div>
 
 </body>
