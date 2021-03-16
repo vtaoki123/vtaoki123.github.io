@@ -18,12 +18,17 @@
   box-sizing: border-box;   /* This is necessary to create the layout boxes side by side */
 }
 
-header {   /* This defines the parameters of the header portion of the webpage*/
-  padding: 20px;
-  text-align: center;
-  font-family: copperplate;
-  font-size: 30px;
-  color: white;
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 nav {   /* This defines the parameters of the navigation bar of the webpage*/
@@ -66,6 +71,18 @@ tr:nth-child(even) {
 <header>
     <h1>Welcome to Chubby's World!!</h1>
 </header>
+
+<div class="clearfix">
+    <div class="img-container">
+    <img src="3musketeers01.jpg" alt="3 Musketeers" style="width:100%">
+    </div>
+    <div class="img-container">
+    <img src="3musketeers02.jpg" alt="3 Musketeers" style="width:100%">
+    </div>
+    <div class="img-container">
+    <img src="3musketeers03.jpg" alt="3 Musketeers" style="width:100%">
+    </div>
+</div>
 
 <section>
     <nav>
