@@ -19,6 +19,36 @@
   box-sizing: border-box;   /* Necessary to create layout boxes side by side */
 }
 
+ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
 .img-container {
   float: left;
   width: 33.33%;
@@ -72,6 +102,15 @@ tr:nth-child(even) {
     <h1>Chubby's World</h1>
 </header>
 
+
+<ul>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#">Chubby</a></li>
+    <li><a href="#">More Chubby</a></li>
+    <li><a href="#">Most Chubby</a></li>
+  </ul>
+  
+
 <div class="clearfix">
     <div class="img-container">
     <img src="3musketeers01.jpg" alt="3 Musketeers" style="width:100%">
@@ -85,11 +124,12 @@ tr:nth-child(even) {
 </div>
 
 <div class="left">
-    <ul>
+    <!--<ul>
         <li><a href="#">Chubby</a></li>
         <li><a href="#">Tiptoes</a></li>
         <li><a href="#">Piggy</a></li>
-    </ul>
+    </ul>-->
+    <p>Left section</p>
 </div>
 
 <div class="main">

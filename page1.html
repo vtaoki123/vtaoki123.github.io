@@ -8,6 +8,34 @@
     box-sizing:border-box;
 }
  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
 .left {
     padding:20px;
     width:30%;
@@ -36,12 +64,20 @@
 <body>
 
 
+  <ul>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#">Chubby</a></li>
+    <li><a href="#">More Chubby</a></li>
+    <li><a href="#">Most Chubby</a></li>
+  </ul>
+  
+  
 
 
 <div class="left">
   <p>
   <a href="index.html">Return to Homepage<br></a><br>
-  <a href="page2.html">Go to Page 2<br></a>
+  <a href="page2.html">Go to Animal Friend Gallery 2<br></a>
   </p>
 </div>
 
