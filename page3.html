@@ -3,12 +3,19 @@
 <head>
 <link rel="stylesheet" href="styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rotating Friends</title>
+<title>Morphing Friends</title>
 
 <style>
 img:hover {
-  animation: shake 1.0s;
-  animation-iteration-count: infinite;
+  /*animation: rotate 1.0s;
+  animation-iteration-count: infinite;*/
+  width:300px;
+  height:300px;
+  transition: width 2.0s
+}
+
+img:active {
+  width: 900px;
 }
 
 /*@keyframes shake {
@@ -25,7 +32,7 @@ img:hover {
   100% { transform: translate(1px, -2px) rotate(-3deg); }
 }*/
 
-@keyframes shake {
+@keyframes rotate {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-36deg); }
   20% { transform: translate(-3px, 0px) rotate(-72deg); }
@@ -39,32 +46,41 @@ img:hover {
   100% { transform: translate(1px, -2px) rotate(-360deg); }
 }
 
+
 </style>
 </head>
+
+
 <body>
 
 <br>
 <br>
 
 <header>
-<h2>Rotating Friends!</h2>
+<h2>Morphing Friends!</h2>
 </header>
 
 <ul>
     <li><a class="active" href="index.html">Home</a></li>
     <li><a href="page1.html">HTML Playground</a></li>
     <li><a href="page2.html">Animal World</a></li>
-    <li><a href="page3.html">Rotating Friends</a></li>
+    <li><a href="page3.html">Morpohing Friends</a></li>
 </ul>
 
 
-<p>Hover over the image to watch Markie rotate!!</p>
+<p>Click and hold on the image to watch Markie change!!</p>
 <img src="markie2.png" alt="Jiggly Markie" width="300" height="300" class="center">
 <br>
 <br>
-<p>Hover over the image to watch the gingi rotate!!</p>
+<p>Click and hold on the image to watch the gingi change!!</p>
 <img src="gingi.png" alt="Jiggly Gingi" width="300" height="400" class="center">
 <br>
+<br>
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 <br>
 </body>
 </html>
