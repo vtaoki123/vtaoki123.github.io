@@ -23,3 +23,59 @@ footer {
   color:blue;
   font-size: 10px;
 }
+
+* {
+  box-sizing:border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(126, 111, 111);
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.left {
+  padding:20px;
+  width:30%;
+  float: left;
+}
+
+.main {
+  padding:20px;
+  width:70%;
+  float: left;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width:800px) {
+.left, .main {
+  width:100%;
+}
+}

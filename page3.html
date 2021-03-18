@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jiggly Markie</title>
+
 <style>
 img:hover {
   animation: shake 0.5s;
@@ -10,25 +13,39 @@ img:hover {
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  10% { transform: translate(-1px, -2px) rotate(-3deg); }
+  20% { transform: translate(-3px, 0px) rotate(3deg); }
   30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  40% { transform: translate(1px, -1px) rotate(3deg); }
+  50% { transform: translate(-1px, 2px) rotate(-3deg); }
   60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  70% { transform: translate(3px, 1px) rotate(-3deg); }
+  80% { transform: translate(-1px, -1px) rotate(3deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  100% { transform: translate(1px, -2px) rotate(-3deg); }
 }
 </style>
 </head>
 <body>
 
+<br>
+<br>
+
+<header>
+<h2>Jiggly Markie!</h2>
+</header>
+
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="page1.html">HTML Playground</a></li>
+    <li><a href="page2.html">Animal World</a></li>
+    <li><a href="page3.html">Jiggly Markie</a></li>
+</ul>
+
+
 <p>Hover over the image to watch Markie jiggle!!</p>
-<img src="markie2.png" alt="Jiggly Markie" width="300" height="300">
+<img src="markie2.png" alt="Jiggly Markie" width="300" height="300" class="center">
 <br>
 <br>
-<a href="index.html">Return to Homepage<br></a><br>
 </body>
 </html>
