@@ -3,15 +3,15 @@
 <head>
 <link rel="stylesheet" href="styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jiggly Markie</title>
+<title>Rotating Friends</title>
 
 <style>
 img:hover {
-  animation: shake 0.5s;
+  animation: shake 1.0s;
   animation-iteration-count: infinite;
 }
 
-@keyframes shake {
+/*@keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-3deg); }
   20% { transform: translate(-3px, 0px) rotate(3deg); }
@@ -23,7 +23,22 @@ img:hover {
   80% { transform: translate(-1px, -1px) rotate(3deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-3deg); }
+}*/
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-36deg); }
+  20% { transform: translate(-3px, 0px) rotate(-72deg); }
+  30% { transform: translate(3px, 2px) rotate(-108deg); }
+  40% { transform: translate(1px, -1px) rotate(-144deg); }
+  50% { transform: translate(-1px, 2px) rotate(-180deg); }
+  60% { transform: translate(-3px, 1px) rotate(-216deg); }
+  70% { transform: translate(3px, 1px) rotate(-252deg); }
+  80% { transform: translate(-1px, -1px) rotate(-288deg); }
+  90% { transform: translate(1px, 2px) rotate(-324deg); }
+  100% { transform: translate(1px, -2px) rotate(-360deg); }
 }
+
 </style>
 </head>
 <body>
@@ -32,22 +47,22 @@ img:hover {
 <br>
 
 <header>
-<h2>Jiggly Friends!</h2>
+<h2>Rotating Friends!</h2>
 </header>
 
 <ul>
     <li><a class="active" href="index.html">Home</a></li>
     <li><a href="page1.html">HTML Playground</a></li>
     <li><a href="page2.html">Animal World</a></li>
-    <li><a href="page3.html">Jiggly Friends</a></li>
+    <li><a href="page3.html">Rotating Friends</a></li>
 </ul>
 
 
-<p>Hover over the image to watch Markie jiggle!!</p>
+<p>Hover over the image to watch Markie rotate!!</p>
 <img src="markie2.png" alt="Jiggly Markie" width="300" height="300" class="center">
 <br>
 <br>
-<p>Hover over the image to watch the gingi jiggle!!</p>
+<p>Hover over the image to watch the gingi rotate!!</p>
 <img src="gingi.png" alt="Jiggly Gingi" width="300" height="400" class="center">
 <br>
 <br>
