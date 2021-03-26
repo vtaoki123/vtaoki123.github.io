@@ -10,7 +10,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Scales to different screen sizes: cell phones and iPads-->
 
-<!YOU CANNOT USE HTML COMMENT CONVENTIONS WITHIN CSS SCRIPT>
+<!--YOU CANNOT USE HTML COMMENT CONVENTIONS WITHIN CSS SCRIPT-->
 
 <style>
 
@@ -19,16 +19,14 @@
   box-sizing: border-box;   
 }
 
+/*standardizes the size of the 3 images*/ 
 .img-container {
   float: left;
   width: 33.33%;
   padding: 5px;
 }
 
-/*img {
-    border:2px solid black;
-}*/
-
+/*code that prevents images from overflowing out of its container*/
 .clearfix::after {
   content: "";
   clear: both;
@@ -46,12 +44,6 @@
     width:70%;
     float: left;
 }
-
-/*@media screen and (max-width:800px) {
-  .left, .main {
-    width:100%;
-  }
-}*/
 
 table {
     font-family: georgia;
@@ -81,8 +73,8 @@ tr:nth-child(even) {
         </button>
         <div class="dropdown-content">
             <a href="page3.html">I ate too much!</a>
-            <a href="#">Jiggling</a>
-            <a href="#">Flipping</a>
+            <a href="page4.html">Jiggly Bear Ah!</a>
+            <a href="page5.html">Flippin Bears</a>
         </div>
     </div> 
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -90,6 +82,7 @@ tr:nth-child(even) {
 
 <br>
 
+<!--Creates the row of images-->
 <div class="clearfix">
     <div class="img-container">
     <img src="3musketeers01.jpg" alt="3 Musketeers" style="width:100%">

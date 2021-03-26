@@ -7,7 +7,7 @@
 
 <style>
 img:hover {
-  animation: shake 0.5s;
+  animation: rotate 1.0s;
   animation-iteration-count: infinite;
   /*width:300px;
   height:300px;
@@ -18,7 +18,7 @@ img:hover {
   width: 900px;
 }*/
 
-@keyframes shake {
+/*@keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-3deg); }
   20% { transform: translate(-3px, 0px) rotate(3deg); }
@@ -30,9 +30,9 @@ img:hover {
   80% { transform: translate(-1px, -1px) rotate(3deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-3deg); }
-}
+}*/
 
-/*@keyframes rotate {
+@keyframes rotate {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-36deg); }
   20% { transform: translate(-3px, 0px) rotate(-72deg); }
@@ -44,7 +44,7 @@ img:hover {
   80% { transform: translate(-1px, -1px) rotate(-288deg); }
   90% { transform: translate(1px, 2px) rotate(-324deg); }
   100% { transform: translate(1px, -2px) rotate(-360deg); }
-}*/
+}
 
 
 </style>
@@ -72,12 +72,12 @@ img:hover {
     
 <br>
 
-<p>Hover over the image to watch Markie jiggle!! Ah! He's a jiggly bear!</p>
-<img src="markie2.png" alt="Jiggly Markie" width="300" height="300" class="center">
+<p>Hover over the image to watch Markie flip!!</p>
+<img src="markie2.png" alt="Shaking Markie" width="300" height="300" class="center">
 <br>
 <br>
-<p>Hover over the image to watch the gingi jiggle!!</p>
-<img src="gingi.png" alt="Jiggly Gingi" width="300" height="400" class="center">
+<p>Hover over the image to watch the gingi flip!!</p>
+<img src="gingi.png" alt="Shaking Gingi" width="300" height="400" class="center">
 <br>
 <br>
 <br>
@@ -86,20 +86,21 @@ img:hover {
 <br><br>
 <br><br>
 <br>
+
 <script>
-  function openGoogle(){
-      window.open("https://www.google.com","_blank");
-  }
-  function openAnimalWorld(){
-      window.open("page2.html","_blank");
-  }
-  function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-          x.className += " responsive";
-      } else {
-          x.className = "topnav";
-  }
+    function openGoogle(){
+        window.open("https://www.google.com","_blank");
+    }
+    function openAnimalWorld(){
+        window.open("page2.html","_blank");
+    }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+    }
 }
 </script>
 

@@ -55,21 +55,28 @@ div.desc {
 </head>
 <body>
 
-<ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="page1.html">HTML Playground</a></li>
-    <li><a href="page2.html">Animal World</a></li>
-    <li><a href="page3.html">Morphing Friends</a></li>
-</ul>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="page1.html">HTML Playground</a>
+    <a href="page2.html">Animal World</a>
+    <div class="dropdown">
+        <button class="dropbtn">Morphing Friends 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="page3.html">I ate too much!</a>
+            <a href="page4.html">Jiggly Bear Ah!</a>
+            <a href="page5.html">Flippin Bears</a>
+        </div>
+    </div> 
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+    
+<br>
+
+<header>Meet some of the stars of Animal World!!</header>
 
 <br>
-<br>
-
-<header>
-<h2>Welcome to Animal World!</h2>
-</header>
-
-<p>Come meet some of the stars of Animal World!! <br> <a href="index.html"> Or you can return to the homepage<br></a><br></p>
 
 <div class="responsive">
   <div class="gallery">
@@ -113,6 +120,25 @@ div.desc {
 <div style="padding:6px;">
   <p></p>
 </div>
+
+<script>
+  function openGoogle(){
+      window.open("https://www.google.com","_blank");
+  }
+  function openAnimalWorld(){
+      window.open("page2.html","_blank");
+  }
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+  }
+}
+</script>
+
+<noscript>Your browser does not support JavaScript!</noscript>
 
 </body>
 </html>

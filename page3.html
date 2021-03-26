@@ -53,12 +53,24 @@ img:active {
 
 <body>
 
-<ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="page1.html">HTML Playground</a></li>
-    <li><a href="page2.html">Animal World</a></li>
-    <li><a href="page3.html">Morphing Friends</a></li>
-</ul>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="page1.html">HTML Playground</a>
+    <a href="page2.html">Animal World</a>
+    <div class="dropdown">
+        <button class="dropbtn">Morphing Friends 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="page3.html">I ate too much!</a>
+            <a href="page4.html">Jiggly Bear Ah!</a>
+            <a href="page5.html">Flippin Bears</a>
+        </div>
+    </div> 
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+    
+<br>
 
 
 <p>Click and hold on the image to watch Markie change!!</p>
@@ -75,5 +87,25 @@ img:active {
 <br><br>
 <br><br>
 <br>
+
+<script>
+  function openGoogle(){
+      window.open("https://www.google.com","_blank");
+  }
+  function openAnimalWorld(){
+      window.open("page2.html","_blank");
+  }
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+  }
+}
+</script>
+
+<noscript>Your browser does not support JavaScript!</noscript>
+
 </body>
 </html>
